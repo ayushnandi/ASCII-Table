@@ -1,0 +1,948 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASCII</title>
+    <meta charset="UTF-8">
+    #
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>ASCII</title>
+
+  <style>
+    /* CSS code */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    p {
+      color: #666;
+    }
+    
+    .button {
+      padding: 10px 20px;
+      background-color: #0099ff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+    
+  <h1>ASCII TABLE</h1>
+  <p>This is a basic web page template.</p>
+  <button class="button" onclick="showMessage()">Click Me</button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Sr no.</th>
+        <th scope="col">Decimal</th>
+        <th scope="col">Hex</th>
+        <th scope="col">Characters</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>0</td>
+        <td>00</td>
+        <td>Null</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>1</td>
+        <td>01</td>
+        <td>Start of Heading</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>2</td>
+        <td>02</td>
+        <td>Start of Text</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>3</td>
+        <td>03</td>
+        <td>End of Text</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>5</td>
+        <td>05</td>
+        <td>Enquiry</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>6</td>
+        <td>06</td>
+        <td>Acknowledge</td>
+      </tr>
+      <!-- Add rows for ASCII values 7 to 127 -->
+      <tr>
+        <th scope="row">7</th>
+        <td>7</td>
+        <td>07</td>
+        <td>Bell</td>
+      </tr>
+      <tr>
+        <th scope="row">8</th>
+        <td>8</td>
+        <td>08</td>
+        <td>Backspace</td>
+      </tr>
+      <tr>
+        <th scope="row">9</th>
+        <td>9</td>
+        <td>09</td>
+        <td>Horizontal Tab</td>
+      </tr>
+      <!-- Row 10 -->
+      <tr>
+        <th scope="row">10</th>
+        <td>10</td>
+        <td>0A</td>
+        <td>New Line</td>
+      </tr>
+      <!-- Row 11 -->
+      <tr>
+        <th scope="row">11</th>
+        <td>11</td>
+        <td>0B</td>
+        <td>Vertical Tab</td>
+      </tr>
+      <!-- Row 12 -->
+      <tr>
+        <th scope="row">12</th>
+        <td>12</td>
+        <td>0C</td>
+        <td>Form Feed</td>
+      </tr>
+      <!-- Row 13 -->
+      <tr>
+        <th scope="row">13</th>
+        <td>13</td>
+        <td>0D</td>
+        <td>Carriage Return</td>
+      </tr>
+      <!-- Row 14 -->
+      <tr>
+        <th scope="row">14</th>
+        <td>14</td>
+        <td>0E</td>
+        <td>Shift Out</td>
+      </tr>
+      <!-- Row 15 -->
+      <tr>
+        <th scope="row">15</th>
+        <td>15</td>
+        <td>0F</td>
+        <td>Shift In</td>
+      </tr>
+      <!-- Row 16 -->
+      <tr>
+        <th scope="row">16</th>
+        <td>16</td>
+        <td>10</td>
+        <td>Data Link Escape</td>
+      </tr>
+      <!-- Row 17 -->
+      <tr>
+        <th scope="row">17</th>
+        <td>17</td>
+        <td>11</td>
+        <td>Device Control 1</td>
+      </tr>
+      <!-- Row 18 -->
+      <tr>
+        <th scope="row">18</th>
+        <td>18</td>
+        <td>12</td>
+        <td>Device Control 2</td>
+      </tr>
+      <!-- Row 19 -->
+      <tr>
+        <th scope="row">19</th>
+        <td>19</td>
+        <td>13</td>
+        <td>Device Control 3</td>
+      </tr>
+      <!-- Row 20 -->
+      <tr>
+        <th scope="row">20</th>
+        <td>20</td>
+        <td>14</td>
+        <td>Device Control 4</td>
+      </tr>
+      <!-- Row 21 -->
+      <tr>
+        <th scope="row">21</th>
+        <td>21</td>
+        <td>15</td>
+        <td>Negative Acknowledge</td>
+      </tr>
+      <!-- Row 22 -->
+      <tr>
+        <th scope="row">22</th>
+        <td>22</td>
+        <td>16</td>
+        <td>Synchronous Idle</td>
+      </tr>
+      <!-- Row 23 -->
+      <tr>
+        <th scope="row">23</th>
+        <td>23</td>
+        <td>17</td>
+        <td>End of Transmission Block</td>
+      </tr>
+      <!-- Row 24 -->
+      <tr>
+        <th scope="row">24</th>
+        <td>24</td>
+        <td>18</td>
+        <td>Cancel</td>
+      </tr>
+      <!-- Row 25 -->
+      <tr>
+        <th scope="row">25</th>
+        <td>25</td>
+        <td>19</td>
+        <td>End of Medium</td>
+      </tr>
+      <tr>
+        <th scope="row">26</th>
+        <td>26</td>
+        <td>1A</td>
+        <td>Substitute</td>
+      </tr>
+      <!-- Row 27 -->
+      <tr>
+        <th scope="row">27</th>
+        <td>27</td>
+        <td>1B</td>
+        <td>Escape</td>
+      </tr>
+      <!-- Row 28 -->
+      <tr>
+        <th scope="row">28</th>
+        <td>28</td>
+        <td>1C</td>
+        <td>File Separator</td>
+      </tr>
+      <!-- Row 29 -->
+      <tr>
+        <th scope="row">29</th>
+        <td>29</td>
+        <td>1D</td>
+        <td>Group Separator</td>
+      </tr>
+      <!-- Row 30 -->
+      <tr>
+        <th scope="row">30</th>
+        <td>30</td>
+        <td>1E</td>
+        <td>Record Separator</td>
+      </tr>
+      <!-- Row 31 -->
+      <tr>
+        <th scope="row">31</th>
+        <td>31</td>
+        <td>1F</td>
+        <td>Unit Separator</td>
+      </tr>
+      <!-- Row 32 -->
+      <tr>
+        <th scope="row">32</th>
+        <td>32</td>
+        <td>20</td>
+        <td>Space</td>
+      </tr>
+      <!-- Row 33 -->
+      <tr>
+        <th scope="row">33</th>
+        <td>33</td>
+        <td>21</td>
+        <td>Exclamation Mark</td>
+      </tr>
+      <!-- Row 34 -->
+      <tr>
+        <th scope="row">34</th>
+        <td>34</td>
+        <td>22</td>
+        <td>Quotation Mark</td>
+      </tr>
+      <!-- Row 35 -->
+      <tr>
+        <th scope="row">35</th>
+        <td>35</td>
+        <td>23</td>
+        <td>Number Sign</td>
+      </tr>
+      <!-- Row 36 -->
+      <tr>
+        <th scope="row">36</th>
+        <td>36</td>
+        <td>24</td>
+        <td>Dollar Sign</td>
+      </tr>
+      <!-- Row 37 -->
+      <tr>
+        <th scope="row">37</th>
+        <td>37</td>
+        <td>25</td>
+        <td>Percent Sign</td>
+      </tr>
+      <!-- Row 38 -->
+      <tr>
+        <th scope="row">38</th>
+        <td>38</td>
+        <td>26</td>
+        <td>Ampersand</td>
+      </tr>
+      <!-- Row 39 -->
+      <tr>
+        <th scope="row">39</th>
+        <td>39</td>
+        <td>27</td>
+        <td>Apostrophe</td>
+      </tr>
+      <!-- Row 40 -->
+      <tr>
+        <th scope="row">40</th>
+        <td>40</td>
+        <td>28</td>
+        <td>Left Parenthesis</td>
+      </tr>
+      <!-- Row 41 -->
+      <tr>
+        <th scope="row">41</th>
+        <td>41</td>
+        <td>29</td>
+        <td>Right Parenthesis</td>
+      </tr>
+      <!-- Row 42 -->
+      <tr>
+        <th scope="row">42</th>
+        <td>42</td>
+        <td>2A</td>
+        <td>Asterisk</td>
+      </tr>
+      <!-- Row 43 -->
+      <tr>
+        <th scope="row">43</th>
+        <td>43</td>
+        <td>2B</td>
+        <td>Plus Sign</td>
+      </tr>
+      <!-- Row 44 -->
+      <tr>
+        <th scope="row">44</th>
+        <td>44</td>
+        <td>2C</td>
+        <td>Comma</td>
+      </tr>
+      <!-- Row 45 -->
+      <tr>
+        <th scope="row">45</th>
+        <td>45</td>
+        <td>2D</td>
+        <td>Hyphen-Minus</td>
+      </tr>
+      <!-- Row 46 -->
+      <tr>
+        <th scope="row">46</th>
+        <td>46</td>
+        <td>2E</td>
+        <td>Full Stop</td>
+      </tr>
+      <!-- Row 47 -->
+      <tr>
+        <th scope="row">47</th>
+        <td>47</td>
+        <td>2F</td>
+        <td>Solidus</td>
+      </tr>
+      <!-- Row 48 -->
+      <tr>
+        <th scope="row">48</th>
+        <td>48</td>
+        <td>30</td>
+        <td>Digit Zero</td>
+      </tr>
+      <!-- Row 49 -->
+      <tr>
+        <th scope="row">49</th>
+        <td>49</td>
+        <td>31</td>
+        <td>Digit One</td>
+      </tr>
+      <!-- Row 50 -->
+      <tr>
+        <th scope="row">50</th>
+        <td>50</td>
+        <td>32</td>
+        <td>Digit Two</td>
+      </tr>
+      <!-- Row 51 -->
+      <tr>
+        <th scope="row">51</th>
+        <td>51</td>
+        <td>33</td>
+        <td>Digit Three</td>
+      </tr>
+      <!-- Row 52 -->
+      <tr>
+        <th scope="row">52</th>
+        <td>52</td>
+        <td>34</td>
+        <td>Digit Four</td>
+      </tr>
+      <!-- Row 53 -->
+      <tr>
+        <th scope="row">53</th>
+        <td>53</td>
+        <td>35</td>
+        <td>Digit Five</td>
+      </tr>
+      <!-- Row 54 -->
+      <tr>
+        <th scope="row">54</th>
+        <td>54</td>
+        <td>36</td>
+        <td>Digit Six</td>
+      </tr>
+      <!-- Row 55 -->
+      <tr>
+        <th scope="row">55</th>
+        <td>55</td>
+        <td>37</td>
+        <td>Digit Seven</td>
+      </tr>
+      <!-- Row 56 -->
+      <tr>
+        <th scope="row">56</th>
+        <td>56</td>
+        <td>38</td>
+        <td>Digit Eight</td>
+      </tr>
+      <!-- Row 57 -->
+      <tr>
+        <th scope="row">57</th>
+        <td>57</td>
+        <td>39</td>
+        <td>Digit Nine</td>
+      </tr>
+      <!-- Row 58 -->
+      <tr>
+        <th scope="row">58</th>
+        <td>58</td>
+        <td>3A</td>
+        <td>Colon</td>
+      </tr>
+      <!-- Row 59 -->
+      <tr>
+        <th scope="row">59</th>
+        <td>59</td>
+        <td>3B</td>
+        <td>Semicolon</td>
+      </tr>
+      <!-- Row 60 -->
+      <tr>
+        <th scope="row">60</th>
+        <td>60</td>
+        <td>3C</td>
+        <td>Less Than Sign</td>
+      </tr>
+      <tr>
+        <th scope="row">61</th>
+        <td>61</td>
+        <td>3D</td>
+        <td>Equals Sign</td>
+      </tr>
+      <!-- Row 62 -->
+      <tr>
+        <th scope="row">62</th>
+        <td>62</td>
+        <td>3E</td>
+        <td>Greater Than Sign</td>
+      </tr>
+      <!-- Row 63 -->
+      <tr>
+        <th scope="row">63</th>
+        <td>63</td>
+        <td>3F</td>
+        <td>Question Mark</td>
+      </tr>
+      <!-- Row 64 -->
+      <tr>
+        <th scope="row">64</th>
+        <td>64</td>
+        <td>40</td>
+        <td>Commercial At</td>
+      </tr>
+      <!-- Row 65 -->
+      <tr>
+        <th scope="row">65</th>
+        <td>65</td>
+        <td>41</td>
+        <td>Uppercase A</td>
+      </tr>
+      <!-- Row 66 -->
+      <tr>
+        <th scope="row">66</th>
+        <td>66</td>
+        <td>42</td>
+        <td>Uppercase B</td>
+      </tr>
+      <!-- Row 67 -->
+      <tr>
+        <th scope="row">67</th>
+        <td>67</td>
+        <td>43</td>
+        <td>Uppercase C</td>
+      </tr>
+      <!-- Row 68 -->
+      <tr>
+        <th scope="row">68</th>
+        <td>68</td>
+        <td>44</td>
+        <td>Uppercase D</td>
+      </tr>
+      <!-- Row 69 -->
+      <tr>
+        <th scope="row">69</th>
+        <td>69</td>
+        <td>45</td>
+        <td>Uppercase E</td>
+      </tr>
+      <!-- Row 70 -->
+      <tr>
+        <th scope="row">70</th>
+        <td>70</td>
+        <td>46</td>
+        <td>Uppercase F</td>
+      </tr>
+      <!-- Row 71 -->
+      <tr>
+        <th scope="row">71</th>
+        <td>71</td>
+        <td>47</td>
+        <td>Uppercase G</td>
+      </tr>
+      <!-- Row 72 -->
+      <tr>
+        <th scope="row">72</th>
+        <td>72</td>
+        <td>48</td>
+        <td>Uppercase H</td>
+      </tr>
+      <!-- Row 73 -->
+      <tr>
+        <th scope="row">73</th>
+        <td>73</td>
+        <td>49</td>
+        <td>Uppercase I</td>
+      </tr>
+      <!-- Row 74 -->
+      <tr>
+        <th scope="row">74</th>
+        <td>74</td>
+        <td>4A</td>
+        <td>Uppercase J</td>
+      </tr>
+      <!-- Row 75 -->
+      <tr>
+        <th scope="row">75</th>
+        <td>75</td>
+        <td>4B</td>
+        <td>Uppercase K</td>
+      </tr>
+      <!-- Row 76 -->
+      <tr>
+        <th scope="row">76</th>
+        <td>76</td>
+        <td>4C</td>
+        <td>Uppercase L</td>
+      </tr>
+      <!-- Row 77 -->
+      <tr>
+        <th scope="row">77</th>
+        <td>77</td>
+        <td>4D</td>
+        <td>Uppercase M</td>
+      </tr>
+      <!-- Row 78 -->
+      <tr>
+        <th scope="row">78</th>
+        <td>78</td>
+        <td>4E</td>
+        <td>Uppercase N</td>
+      </tr>
+      <!-- Row 79 -->
+      <tr>
+        <th scope="row">79</th>
+        <td>79</td>
+        <td>4F</td>
+        <td>Uppercase O</td>
+      </tr>
+      <!-- Row 80 -->
+      <tr>
+        <th scope="row">80</th>
+        <td>80</td>
+        <td>50</td>
+        <td>Uppercase P</td>
+      </tr>
+      <!-- Row 81 -->
+      <tr>
+        <th scope="row">81</th>
+        <td>81</td>
+        <td>51</td>
+        <td>Uppercase Q</td>
+      </tr>
+      <!-- Row 82 -->
+      <tr>
+        <th scope="row">82</th>
+        <td>82</td>
+        <td>52</td>
+        <td>Uppercase R</td>
+      </tr>
+      <!-- Row 83 -->
+      <tr>
+        <th scope="row">83</th>
+        <td>83</td>
+        <td>53</td>
+        <td>Uppercase S</td>
+      </tr>
+      <!-- Row 84 -->
+      <tr>
+        <th scope="row">84</th>
+        <td>84</td>
+        <td>54</td>
+        <td>Uppercase T</td>
+      </tr>
+      <!-- Row 85 -->
+      <tr>
+        <th scope="row">85</th>
+        <td>85</td>
+        <td>55</td>
+        <td>Uppercase U</td>
+      </tr>
+      <!-- Row 86 -->
+      <tr>
+        <th scope="row">86</th>
+        <td>86</td>
+        <td>56</td>
+        <td>Uppercase V</td>
+      </tr>
+      <!-- Row 87 -->
+      <tr>
+        <th scope="row">87</th>
+        <td>87</td>
+        <td>57</td>
+        <td>Uppercase W</td>
+      </tr>
+      <!-- Row 88 -->
+      <tr>
+        <th scope="row">88</th>
+        <td>88</td>
+        <td>58</td>
+        <td>Uppercase X</td>
+      </tr>
+      <!-- Row 89 -->
+      <tr>
+        <th scope="row">89</th>
+        <td>89</td>
+        <td>59</td>
+        <td>Uppercase Y</td>
+      </tr>
+      <!-- Row 90 -->
+      <tr>
+        <th scope="row">90</th>
+        <td>90</td>
+        <td>5A</td>
+        <td>Uppercase Z</td>
+      </tr>
+      <!-- Row 91 -->
+      <tr>
+        <th scope="row">91</th>
+        <td>91</td>
+        <td>5B</td>
+        <td>Left Square Bracket</td>
+      </tr>
+      <!-- Row 92 -->
+      <tr>
+        <th scope="row">92</th>
+        <td>92</td>
+        <td>5C</td>
+        <td>Backslash</td>
+      </tr>
+      <!-- Row 93 -->
+      <tr>
+        <th scope="row">93</th>
+        <td>93</td>
+        <td>5D</td>
+        <td>Right Square Bracket</td>
+      </tr>
+      <!-- Row 94 -->
+      <tr>
+        <th scope="row">94</th>
+        <td>94</td>
+        <td>5E</td>
+        <td>Caret</td>
+      </tr>
+      <!-- Row 95 -->
+      <tr>
+        <th scope="row">95</th>
+        <td>95</td>
+        <td>5F</td>
+        <td>Underscore</td>
+      </tr>
+      <!-- Row 96 -->
+      <tr>
+        <th scope="row">96</th>
+        <td>96</td>
+        <td>60</td>
+        <td>Grave Accent</td>
+      </tr>
+      <!-- Row 97 -->
+      <tr>
+        <th scope="row">97</th>
+        <td>97</td>
+        <td>61</td>
+        <td>Lowercase a</td>
+      </tr>
+      <!-- Row 98 -->
+      <tr>
+        <th scope="row">98</th>
+        <td>98</td>
+        <td>62</td>
+        <td>Lowercase b</td>
+      </tr>
+      <!-- Row 99 -->
+      <tr>
+        <th scope="row">99</th>
+        <td>99</td>
+        <td>63</td>
+        <td>Lowercase c</td>
+      </tr>
+      <!-- Row 100 -->
+      <tr>
+        <th scope="row">100</th>
+        <td>100</td>
+        <td>64</td>
+        <td>Lowercase d</td>
+      </tr>
+      <!-- Row 101 -->
+      <tr>
+        <th scope="row">101</th>
+        <td>101</td>
+        <td>65</td>
+        <td>Lowercase e</td>
+      </tr>
+      <!-- Row 102 -->
+      <tr>
+        <th scope="row">102</th>
+        <td>102</td>
+        <td>66</td>
+        <td>Lowercase f</td>
+      </tr>
+      <!-- Row 103 -->
+      <tr>
+        <th scope="row">103</th>
+        <td>103</td>
+        <td>67</td>
+        <td>Lowercase g</td>
+      </tr>
+      <!-- Row 104 -->
+      <tr>
+        <th scope="row">104</th>
+        <td>104</td>
+        <td>68</td>
+        <td>Lowercase h</td>
+      </tr>
+      <!-- Row 105 -->
+      <tr>
+        <th scope="row">105</th>
+        <td>105</td>
+        <td>69</td>
+        <td>Lowercase i</td>
+      </tr>
+      <!-- Row 106 -->
+      <tr>
+        <th scope="row">106</th>
+        <td>106</td>
+        <td>6A</td>
+        <td>Lowercase j</td>
+      </tr>
+      <!-- Row 107 -->
+      <tr>
+        <th scope="row">107</th>
+        <td>107</td>
+        <td>6B</td>
+        <td>Lowercase k</td>
+      </tr>
+      <!-- Row 108 -->
+      <tr>
+        <th scope="row">108</th>
+        <td>108</td>
+        <td>6C</td>
+        <td>Lowercase l</td>
+      </tr>
+      <!-- Row 109 -->
+      <tr>
+        <th scope="row">109</th>
+        <td>109</td>
+        <td>6D</td>
+        <td>Lowercase m</td>
+      </tr>
+      <!-- Row 110 -->
+      <tr>
+        <th scope="row">110</th>
+        <td>110</td>
+        <td>6E</td>
+        <td>Lowercase n</td>
+      </tr>
+      <!-- Row 111 -->
+      <tr>
+        <th scope="row">111</th>
+        <td>111</td>
+        <td>6F</td>
+        <td>Lowercase o</td>
+      </tr>
+      <!-- Row 112 -->
+      <tr>
+        <th scope="row">112</th>
+        <td>112</td>
+        <td>70</td>
+        <td>Lowercase p</td>
+      </tr>
+      <!-- Row 113 -->
+      <tr>
+        <th scope="row">113</th>
+        <td>113</td>
+        <td>71</td>
+        <td>Lowercase q</td>
+      </tr>
+      <!-- Row 114 -->
+      <tr>
+        <th scope="row">114</th>
+        <td>114</td>
+        <td>72</td>
+        <td>Lowercase r</td>
+      </tr>
+      <!-- Row 115 -->
+      <tr>
+        <th scope="row">115</th>
+        <td>115</td>
+        <td>73</td>
+        <td>Lowercase s</td>
+      </tr>
+      <!-- Row 116 -->
+      <tr>
+        <th scope="row">116</th>
+        <td>116</td>
+        <td>74</td>
+        <td>Lowercase t</td>
+      </tr>
+      <!-- Row 117 -->
+      <tr>
+        <th scope="row">117</th>
+        <td>117</td>
+        <td>75</td>
+        <td>Lowercase u</td>
+      </tr>
+      <!-- Row 118 -->
+      <tr>
+        <th scope="row">118</th>
+        <td>118</td>
+        <td>76</td>
+        <td>Lowercase v</td>
+      </tr>
+      <!-- Row 119 -->
+      <tr>
+        <th scope="row">119</th>
+        <td>119</td>
+        <td>77</td>
+        <td>Lowercase w</td>
+      </tr>
+      <!-- Row 120 -->
+      <tr>
+        <th scope="row">120</th>
+        <td>120</td>
+        <td>78</td>
+        <td>Lowercase x</td>
+      </tr>
+      <!-- Row 121 -->
+      <tr>
+        <th scope="row">121</th>
+        <td>121</td>
+        <td>79</td>
+        <td>Lowercase y</td>
+      </tr>
+      <!-- Row 122 -->
+      <tr>
+        <th scope="row">122</th>
+        <td>122</td>
+        <td>7A</td>
+        <td>Lowercase z</td>
+      </tr>
+      <!-- Row 123 -->
+      <tr>
+        <th scope="row">123</th>
+        <td>123</td>
+        <td>7B</td>
+        <td>Left Curly Bracket</td>
+      </tr>
+      <!-- Row 124 -->
+      <tr>
+        <th scope="row">124</th>
+        <td>124</td>
+        <td>7C</td>
+        <td>Vertical Line</td>
+      </tr>
+      <!-- Row 125 -->
+      <tr>
+        <th scope="row">125</th>
+        <td>125</td>
+        <td>7D</td>
+        <td>Right Curly Bracket</td>
+      </tr>
+      <!-- Row 126 -->
+      <tr>
+        <th scope="row">126</th>
+        <td>126</td>
+        <td>7E</td>
+        <td>Tilde</td>
+      </tr>
+      <!-- Row 127 -->
+      <tr>
+        <th scope="row">127</th>
+        <td>127</td>
+        <td>7F</td>
+        <td>Delete</td>
+      </tr>
+      <!-- Continue adding rows for remaining ASCII values up to 127 -->
+    </tbody>
+  </table>
+
+
+  <script>
+    // JavaScript code
+    function showMessage() {
+      alert("Hello, World!");
+    }
+  </script>
+</body>
+</html>

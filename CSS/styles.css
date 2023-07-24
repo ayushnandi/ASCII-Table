@@ -1,0 +1,39 @@
+.container-fluid{
+    padding: 7% 15%;
+  }
+
+.button {
+    padding: 10px 20px;
+    background-color: #0099ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  
+    
+  h1 {
+    color: #333;
+  }
+  
+
+.sidebar--navDefault--24B9Y {
+    margin: auto;
+    width: 265px;
+    box-sizing: border-box;
+    height: 100vh;
+    flex-shrink: 0;
+    border-right: 1px solid var(--color-border, #e5e5e5);
+    transition: .2s ease-out;
+    background-color: var(--color-bg, #ffffff);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font: inherit;
+    vertical-align: inherit;
+    outline: none;
+    letter-spacing: inherit;
+    text-decoration: none;
+    cursor: inherit;
+    }
