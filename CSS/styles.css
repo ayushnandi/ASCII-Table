@@ -37,3 +37,74 @@
     text-decoration: none;
     cursor: inherit;
     }
+    
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding-left: var(--gutter);
+      padding-right: var(--gutter);
+      max-width: calc(1440px + var(--gutter) * 2);
+  }
+  .header-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  body {
+    font: var(--base-font-size)/var(--base-line-height) "Uber Move Text", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    color: var(--base-text-color);
+    min-width: 320px;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+  .header-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .nav-opener {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    outline: none;
+    border: none;
+    z-index: 1002;
+    padding: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+
+/* font style */ 
+.title-heading{
+  font-family: 'Poppins', sans-serif;
+  font-size: 40.4;
+}
+
+.nav-drop {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.nav .header-menu {
+    margin: 0 -5px;
+}
